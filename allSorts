@@ -1,0 +1,60 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg4349hw1;
+
+/**
+ *
+ * @author AusM
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int [] arr100 = new int[100];
+        int [] arr1000 = new int[1000];
+        int [] arr10000 = new int[10000];
+        
+        randomizeArray(arr100);
+        printArray(arr100);
+        System.out.println();
+        randomizeArray(arr1000);
+        printArray(arr1000);
+        System.out.println();
+        randomizeArray(arr10000);
+        printArray(arr10000);
+        System.out.println(); 
+    }
+    
+    private static void printArray(int [] a){
+        System.out.print(a.toString() + " ");
+        for(int i = 0; i < a.length; i++){
+            if (i % 10 == 0){
+                System.out.println();
+                System.out.print(a[i] + " ");
+            }else
+                System.out.print(a[i] + " ");
+        }
+        System.out.println();
+        System.out.println("This array has " + a.length + " elements.");
+    }
+    
+    private static void randomizeArray(int [] a){
+        for (int i = 0; i < a.length; i++){
+           a[i] = (int)(Math.random()*100);
+        }
+    }
+    
+    private static void insertionSort(int [] a){
+           int i, j, key;
+           for (i = 0; i < a.length; i++){
+               for(j = 2; j > 0 && j > i; j++){
+                   
+               }
+           }
+    }
+}
